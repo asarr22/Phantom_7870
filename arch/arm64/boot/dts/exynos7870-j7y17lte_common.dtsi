@@ -1569,7 +1569,7 @@
 		mode = <2>; /* 0: video mode, 1: DP command mode, 2: MIPI command mode */
 		resolution = <1080 1920>;
 		size = <68 121>; // 7inch ??
-		timing,refresh = <60>;
+		timing,refresh = <70>;
 		timing,h-porch = <1 1 1>;
 		timing,v-porch = <10 3 1>;
 		timing,dsi-hs-clk = <850>;
