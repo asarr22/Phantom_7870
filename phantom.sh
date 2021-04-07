@@ -1,4 +1,4 @@
-  #!/bin/bash
+#!/bin/bash
 #
 # PhantomKernel script
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,18 +37,16 @@ CR_DTB=$CR_DIR/boot.img-dtb
 CR_VERSION=V1.0
 CR_NAME=PhantomKernel
 # Thread count
-CR_JOBS=$(nproc --ignore=1)
+CR_JOBS=$(nproc --all)
 # Target android version and platform (7/n/8/o/9/p)
 CR_ANDROID=q
 CR_PLATFORM=10.0.0
-# Target ARCH
-CR_ARCH=arm64
 # Init build
 export CROSS_COMPILE=$CR_TC
 # General init
 export ANDROID_MAJOR_VERSION=$CR_ANDROID
 export PLATFORM_VERSION=$CR_PLATFORM
-export ARCH=$CR_ARCH
+export ARCH=arm64
 # J710X Specific
 CR_ANDROID_J710X=q
 CR_PLATFORM_J710X=10.0.0
