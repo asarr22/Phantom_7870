@@ -41,6 +41,7 @@ CR_JOBS=$(nproc --all)
 # Target android version and platform (7/n/8/o/9/p)
 CR_ANDROID=q
 CR_PLATFORM=10.0.0
+CR_ARCH=arm64
 # Init build
 export CROSS_COMPILE=$CR_TC
 # General init
